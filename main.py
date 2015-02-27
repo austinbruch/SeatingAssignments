@@ -129,7 +129,7 @@ def run():
                if name in _dict: # As long as we have an sms address for the name of interest
                   print "Sending sms to: " + name
                   sms_body = sms_sender.generate_message(name, table, dates[class_number-1])
-                  # sms_sender.send_sms("Malware Seating Assignment", _dict[name], sms_body) # uncomment this line to actually send the SMS
+                  sms_sender.send_sms("Malware Seating Assignment", _dict[name], sms_body) # uncomment this line to actually send the SMS
 
 
 def main():
